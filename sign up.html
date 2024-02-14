@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/bootstrap.css" rel="stylesheet"/>
+    <link href="css/all.css" rel="stylesheet"/>
+    <style>
+        :root
+        {
+            --bgcolor: repeating-linear-gradient(60deg,#FFC107 3%,#FFA000 6%);
+            --txtcolor :#ff8800;
+        }
+        .bg-mycolor
+        {
+            background: var(--bgcolor);
+        }
+        .text-mycolor
+        {
+            color:var(--txtcolor);
+        }
+        .menu
+        {
+          color: black;
+          transition: all 1s;
+        }
+        .menu:hover
+        {
+          color:var(--txtcolor);
+          transition: all 1s;
+        }
+        .ico
+        {
+           border:1px solid black;
+           height:30px;
+           width:30px;
+           line-height: 30px;
+           transition: all 1s;
+        }
+        .ico:hover
+        {
+            transform: rotate(360deg);
+            background: rgba(255,255,255,.8);
+            color: var(--txtcolor);
+            transition: all 1s;
+        }
+        .form-control
+        {
+            margin-bottom: 3%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row top1 bg-mycolor text-center fs-5 py-1">
+            <div class="col-sm-4">
+              <i class="fa-solid fa-phone"></i>+911345678345
+            </div>
+            <div class="col-sm-4">
+                <b style="font-family: 'Courier New', Courier, monospace;">Welcome to Fashion Cart</b>
+            </div>
+            <div class="col-sm-4">
+                <i class="fa-brands fa-facebook-f ico"></i>
+                <i class="fa-brands fa-square-twitter ico"></i>
+                <a href="https://www.instagram.com/imayush_sri/" style="color:black"><i class="fa-brands fa-instagram ico"></i></a>
+                <i class="fa-brands fa-youtube ico"></i>
+            </div>
+        </div>
+        <div class="row top2 bg-light">
+            <div class="col-sm-4 logo">
+                <div class="text-center fs-3 mt-2">Fashion <b class="text-mycolor">Cart <i class="fa-solid fa-cart-shopping"></i></b></div>
+            </div>
+            <div class="col-sm-8 menu ps-5">
+              <!--Start Menu-->
+              <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                  <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#"><span class="menu"><i class="fa-solid fa-house"></i> Home</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link menu" href="about.html" target="_blank"><i class="fa-solid fa-circle-info"></i> About Us</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link menu" href="services.html" target="_blank"><i class="fa-solid fa-taxi"></i> Services</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link menu" href="sign up.html" target="_blank"><i class="fa-regular fa-registered"></i> Register</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link menu" href="contact.html" target="_blank"><i class="fa-regular fa-address-book"></i> Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link menu" href="product.html" target="_blank"><i class="fa-brands fa-product-hunt"></i> Product</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle menu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-regular fa-file-zipper"></i> Gallery
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item menu" href="image Gallery.html" target="_blank"><i class="fa-regular fa-image"></i> Image Gallery</a></li>
+                            <li><a class="dropdown-item menu" href="#"><i class="fa-solid fa-volume-high"></i> Audio Gallery</a></li>
+                            <li><a class="dropdown-item menu" href="#"><i class="fa-solid fa-video"></i> Video Gallery</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <a href="login.html" target="_blank" class="nav-link menu" aria-disabled="true"><i class="fa-solid fa-key"></i> Login</a>
+                        </li>
+                      </ul>
+                       
+                      </div>
+                    </div>
+                  </nav>
+                <!--End Menu-->
+            </div>
+        </div>
+        <div class="row register p-0">
+            <div class="col-sm-12 p-0" style="background: url(image/clothes.avif); background-size: cover; height:650px">
+               <div class="row p-0 mt-5">
+                <div class="col-sm-8 mx-auto pt-4 text-center pb-4" style="background:var(--bgcolor);">
+                    <b class="text-center" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">REGISTRATION FORM</b>
+                    <div class="row mt-3 pe-3">
+                        <div class="col-sm-6 text-start">
+                            <div class="ms-2"><b>Name</b>
+                            <input type="text" placeholder="Enter Your Name" class="form-control mt-1" style="border: none;"/></div>
+                            <div class="mt-3 ms-2"><b class="ms-1">Password</b>
+                            <input type="password" placeholder="Enter Your Password" class="form-control" style="border: none;"/></div>
+                            <div class="mt-3 ms-2"><b class="ms-1">Email</b>
+                            <input type="email" placeholder="Enter Your Email" class="form-control" style="border: none;"/></div>
+                        </div>
+                        <div class="col-sm-6 text-start">
+                            <div class="ms-2"><b>Mobile</b>
+                                <input type="number" placeholder="Enter Your Mobile Number" class="form-control mt-1" style="border: none;"/></div>
+                            <div class="ms-2 mt-3"><b>Confirm Password</b>
+                                <input type="password" placeholder="Enter Confirm Password" class="form-control mt-1" style="border: none;"/></div>
+                            <div class="ms-2 mt-2"><b>Upload Image</b>
+                                <input type="file" class="form-control mt-1" style="border: none;"/></div>
+                        </div>
+                        <div class="col-md-12 text-start">
+                            <div class="ms-2 mt-3"><b>Address</b>
+                                <textarea class="form-control" placeholder="Enter Your Address" style="border: none;"></textarea></div>
+                                <input type="checkbox" class="mt-3 ms-2"/> I accept the Terms of use & Privacy Policy.
+                                <div class="mt-5 text-center"><input type="submit" value="RESISTER" class="text-light" style="background:black; border:none; border-radius:20px; width:120px; height:35px;"/><br>
+                                <span style="color: black;">Already have an account? <a href="login.html" target="_blank" style="text-decoration: none; color: black;"><b>Login Here</b></a></span> </div>
+                        </div>
+                    </div>
+                </div>
+               </div>
+             </div>
+            </div>
+            <div class="row footer1 mt-5 pt-5 ps-5 pe-5" style="background: #262626;">
+                <div class="col-sm-3 ps-5">
+                  <h4 class="text-light">Fashion<b style="color:var(--x)">Cart<i class="fa-solid fa-cart-shopping"></i></b></h4><br>
+                  <p class="text-light">Address:Fatehpur, Uttar Pradesh 212601<br><br>
+                  Phone: 9559779666<br><br>
+                Email:ayushsri9666@gmail.com</p>
+                </div>
+                <div class="col-sm-3 ps-5">
+                  <h4 class="text-light">Information</h4><br>
+                  <p class="text-light"><a href="#" class="mt-5 text-light" style="text-decoration: none;">About Us</a><br/><br>
+                    <a href="#" class="mt-5 text-light" style="text-decoration: none;">Check Out</a><br><br>
+                    <a href="costumer.html" target="_blank" class="mt-5 text-light" style="text-decoration: none;">Contact</a></p><br>
+                </div>
+                <div class="col-sm-3">
+                  <h4 class="text-light">My Account</h4><br>
+                  <p>
+                    <a href="#" class="text-light" style="text-decoration: none;">My Account</a><br><br>
+                    <a href="costumer.html" class="text-light" style="text-decoration: none;" target="_blank">Contact</a><br><br>
+                    <a href="#" class="text-light" style="text-decoration: none;">Shopping Cart</a><br><br>
+                  </p>
+                </div>
+                <div class="col-sm-3">
+                  <h4 class="text-light">Join Our Newsletter Now</h4><br>
+                  <p class="text-light">Get Email updates about our latest shop and
+                  special offers.</p>
+                  <div class="input-group mb-3">
+                    <input type="text" placeholder="Enter Your Mail" class="form-control" style="height:40px;"/>
+                    <i class="input-group-text bg-mycolor" style="height:40px;">SUBSCRIBE</i>
+                  </div>
+                </div>
+              </div>
+                      <div class="row Footer2">
+                        <div class="col-sm-12 p-0">
+                        <hr>
+                      </div>
+                        <div class="col-sm-12 p-0 mx-auto bg-dark">
+                          <div class="text-center fs-3 mt-2 text-light">Fashion <b class="text-mycolor">Cart <i class="fa-solid fa-cart-shopping"></i></b></div>
+                         <p class="text-light text-center mt-3">Copyright © 2023 Fashion Cart, Inc.</p>
+                         <p style="margin-left: 450px;">
+                          <a href="#" style="margin-left:40px; color: white;">Legal Stuff</a>
+                          <a href="#" style="margin-left:40px; color: white;">Privacy Policy</a>
+                          <a href="#" style="margin-left:40px; color: white;">Security</a>
+                        </p>
+                        </div>
+                      </div>
+        </div>
+        <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
